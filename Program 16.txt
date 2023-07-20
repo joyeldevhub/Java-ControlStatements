@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Sixteen {
+	
+	//check palindrome or not
+	private void program() {
+		System.out.println("Enter the number: ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		
+		int digit, reverse = 0, temp = num;
+		while(temp > 0) {
+			digit = temp % 10;
+			reverse = reverse * 10 +digit;
+			temp = temp / 10;
+		}
+		if(reverse == num) {
+			System.out.println("Entered number is Palindrome.");
+		}else {
+			System.out.println("Entered number is not a Palindrome.");
+		}
+	}
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Sixteen info = new Sixteen();
+		info.program();
+	}
+
+}
+
+
+Result:
+Enter the number: 
+242
+Entered number is Palindrome.

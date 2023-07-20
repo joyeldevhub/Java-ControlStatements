@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class Seven {
+	
+	private void code() {		
+		//To print a fibonacci series numbers
+		int a=0, b=0, c=1;
+		
+		System.out.print("Enter the number of times you want: ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		
+		for(int i=1; i<=num; i++) {
+			a=b;
+			b=c;
+			c=a+b;
+			System.out.println(c);
+		}
+	}
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Seven info = new Seven();
+		info.code();
+	}
+
+}
+
+
+Result:
+
+Enter the number of times you want: 10
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89

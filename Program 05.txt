@@ -1,0 +1,25 @@
+public class Five {
+	
+	private void program() {
+		//want to count the even numbers 1 to 100
+		int count=0;
+		for(int i=1; i<=100; i++) {
+			if(i % 2 == 0) {
+				System.out.println(i);	
+				count++;
+			}
+		}
+		System.out.println("Count of Even Numbers: "+count);
+	}
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Five info = new Five();
+		info.program();
+	}
+
+}
+
+Result:
+
+Count of Even Numbers: 50

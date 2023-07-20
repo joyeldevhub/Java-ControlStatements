@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class One {
+	//Check the voting age.
+	
+	private void program() {
+		System.out.print("Enter the Age of yours: ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		System.out.println("Your Age: "+num);
+		
+		if(num >= 18) {
+			System.out.println("Your age is validate for voting");
+		}else {
+			System.out.println("Your age is not validate for voting.");
+		}
+	}
+	
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		One info = new One();
+		info.program();
+	}
+
+}
+
+Result:
+
+Enter the Age of yours: 21
+Your Age: 21
+Your age is validate for voting

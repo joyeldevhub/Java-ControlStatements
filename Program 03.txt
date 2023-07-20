@@ -1,0 +1,28 @@
+public class Three {
+	
+	private void program() {
+		// want to print 1 to 100 even numbers only
+		for(int i=1; i<=100; i++) {
+			if(i % 2 == 0) {
+				System.out.println(i);
+			}
+		}
+	}
+	
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Three info = new Three();
+		info.program();
+	}
+
+}
+
+Result:
+
+2
+4
+6
+8
+10
+........

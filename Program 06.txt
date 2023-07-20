@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Six {
+	
+	private void program() {
+		//get a factorial number,  5*4*3*2*1=?
+		
+		System.out.print("Enter the Number you want: ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		System.out.println("Entered number: "+num);
+		int fact = 1;
+		for(int i=1; i<=num; i++) {
+			fact = fact * i;			
+		}
+		System.out.println("Your factorial number is: "+fact);
+		
+	}
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Six info = new Six();
+		info.program();
+	}
+
+}
+
+Result: 
+
+Enter the Number you want: 5
+Entered number: 5
+Your factorial number is: 120

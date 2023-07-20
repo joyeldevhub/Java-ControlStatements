@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Two {
+	//To check the number is even or not.
+	private void pro() {
+		System.out.print("Enter the Number: ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		System.out.println("Entered Number is: "+num);
+		
+		if(num % 2 == 0) {
+			System.out.println("Entered number is Even");			
+		}else {
+			System.out.println("Entered number is Odd");
+		}
+		
+	}
+	
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Two info = new Two();
+		info.pro();
+	}
+
+}
+
+Result:
+
+Enter the Number: 26
+Entered Number is: 26
+Entered number is Even.

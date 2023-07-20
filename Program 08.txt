@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Eight {
+	
+	private void pro() {
+		//To print the prime number.]
+		System.out.println("Enter the number: ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		
+		int count = 0;
+		for(int i=1; i<=num; i++) {
+			if(num % i == 0) {
+				count++;
+			}			
+		}
+		if(count == 2) {
+			System.out.println("Entered number is Prime Number");
+		}
+		else {
+			System.out.println("Entered number is not a Prime Number");
+		}		
+	}
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Eight info = new Eight();
+		info.pro();
+	}
+
+}
+
+Result: 
+
+Enter the number: 
+11
+Entered number is Prime Number.

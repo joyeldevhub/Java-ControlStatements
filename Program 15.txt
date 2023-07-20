@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Fifteen {
+	
+	//To print the sum of the numbers 123 = 6.
+	
+	private void program() {
+		System.out.println("Enter the Number: ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		
+		int sum = 0, r = 0, temp = num;
+		while(temp > 0) {
+			r = temp % 10;
+			sum = sum + r;
+			temp = temp / 10;
+		}
+		System.out.println("The Sum of your Numbers: "+sum);
+	}
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		Fifteen info = new Fifteen();
+		info.program();
+	}
+
+}
+
+
+Result: 
+Enter the Number: 
+246
+The Sum of your Numbers: 12
